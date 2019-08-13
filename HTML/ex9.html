@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<style>
+		.frm{width:1000px;border:1px solid red}
+		.frm table{width:800px;border:1px solid green;margin-left:100px;margin-top:10px}
+		.frm th{width:300px;border:1px solid red}
+		.frm td{width:300px;border:1px solid red}
+		</style>
+	</head>
+	<body>
+		<h1>Student Registration </h1>
+		<div class="frm">
+		<form name="reg" method="get" action="localhost/php18/save.php">
+			<table>
+			<tr>
+				<th>Student Name</th>
+				<td style="width:200px"></td>
+				<td><input type="text" name="snm" value="" size=30/></td>
+			</tr>
+			<tr>
+				<th>Mother Name</th>
+				<td style="width:200px"></td>
+				<td><input type="text" name="mnm" value=""/></td>
+			</tr>
+			<tr>
+				<th>Father Name</th>
+				<td style="width:200px"></td>
+				<td><input type="text" name="fnm" value=""/></td>
+			</tr>
+			<tr>
+				<th>Date of Birth</th>
+				<td style="width:200px"></td>
+				<td><input type="date" name="snm" value=""/></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td style="width:200px"></td>
+				<td><input type="radio" name="gen" value="Male" checked>Male <input type="radio" name="gen" value="Female">Female</td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td style="width:200px"></td>
+				<td>
+					<textarea name="addr" rows="4" cols="20"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>City</th>
+				<td style="width:200px"></td>
+				<td>
+				<select size="3" name="ct">
+					<option>Mandsaur</option>
+					<option>Neemuch</option>
+					<option>Ratlam</option>
+					<option>Indore</option>
+					<option>Bhopal</option>
+				</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Hobbies</th>
+				<td style="width:200px"></td>
+				<td>
+				<input type="checkbox" name="c1" value="cricket">Cricket
+				<input type="checkbox" name="c2" value="football">Football
+				<input type="checkbox" name="c3" value="music">Music
+				
+				</td>
+			</tr>
+			<tr>
+				<td style="width:200px"></td>
+				<td>
+				<input type="checkbox" name="c4" value="Video">Movies
+				<input type="checkbox" name="c5" value="books">Books
+				<input type="checkbox" name="c6" value="CG">Computer Games
+				
+				</td>
+			</tr>
+			<tr>
+				<th>E-Mail</th>
+				<td style="width:200px"></td>
+				<td><input type="email" name="eml" value=""/></td>
+			</tr>
+			<tr>
+				<th>Job Expirience </th>
+				<td style="width:200px"></td>
+				<td><input type="number" name="jex" value=""/></td>
+			</tr>
+			<tr>
+				<th>Photo ID</th>
+				<td style="width:200px"></td>
+				<td><input type="File" name="pid" value=""/></td>
+			</tr>
+			<tr>
+		<td	colspan="3"><input type="submit" value="Register" name="reg"></th>
+			</tr>
+			</table>
+		</form>
+		</div>
+	</body>
+</html>
